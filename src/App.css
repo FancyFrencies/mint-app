@@ -1,0 +1,129 @@
+.App {
+  text-align: center;
+}
+
+
+
+body {
+ /* background-image: url(./images/MINTBG-01.png);
+ background-color: #cccccc; */
+}
+
+.container{
+  background-image: url(./images/MINTBG-01.png);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.connectWallet {
+    height: 80px;
+}
+
+.headerLogo {
+    height: 80px;
+}
+
+.shrinkBtn {
+    transition: transform 0.4s;
+}
+
+.shrinkBtn:hover {
+    transform: scale(0.95);
+}
+
+.logo {
+  max-height: 8.125em;
+  margin: 0;
+  max-width: 100%;
+  margin-bottom: 1.625em;
+  vertical-align: middle;
+  border: 0;
+}
+
+.connectWalletBtn {
+  position: absolute;
+  top: 5vh;
+  right: 5vh;
+  height: 80px;
+    max-width: 100%;
+    margin-bottom: 1.625em;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.ConnectContainer {
+  background-color: transparent;
+  border-width: 0px;
+}
+
+.windowContainer {
+  background-image: url(./images/MINTWINDOW.png);
+    -webkit-appearance: none;
+    background: none;
+    padding: 0em;
+    border-radius: 0px;
+    border: 0px;
+}
+
+.windowBtn {
+  width: 50vw;
+  max-width: 800px;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 66%;
+}
+
+.walletContainer {
+  width: 80%;
+}
+
+@media all and (max-width: 768px) {
+  .headerLogo {
+    height: 48px;
+}
+    .connectWallet {
+    height: 48px;
+
+}
+    .logo {
+  left: 0;
+  right: 0;
+  width: 50%;
+    }
+    .connectWalletBtn {
+  left: 0;
+  right: 0;
+  margin: auto;
+    }
+
+    .windowBtn {
+      width: 80vw;
+    }
+}
